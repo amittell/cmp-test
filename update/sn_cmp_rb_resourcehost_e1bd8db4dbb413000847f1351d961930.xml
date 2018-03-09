@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_resourcehost">
+    <sn_cmp_rb_resourcehost action="INSERT_OR_UPDATE">
+        <guestresource display_value="Storage Container">fd2c4db0dbb413000847f1351d9619ea</guestresource>
+        <hostresource display_value="AWS Datacenter">0279b35e0be622009e620bcb15673a2e</hostresource>
+        <sys_class_name>sn_cmp_rb_resourcehost</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 18:47:09</sys_created_on>
+        <sys_id>e1bd8db4dbb413000847f1351d961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_rb_resourcehost_e1bd8db4dbb413000847f1351d961930</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 18:47:09</sys_updated_on>
+    </sn_cmp_rb_resourcehost>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_resource_op_graph">
+    <sn_cmp_bp_stage_resource_op_graph action="INSERT_OR_UPDATE">
+        <blueprint_stage_op display_value="Provision">4e68d130dbf413000847f1351d9619e4</blueprint_stage_op>
+        <child_operation display_value="Storage Container.CreateBucket">e9ad1174dbf413000847f1351d9619c9</child_operation>
+        <in_degree>0</in_degree>
+        <parent_operation display_value="Storage Volume.Storage Volume Attach Virtual Server">6359dd70dbf413000847f1351d9619af</parent_operation>
+        <status>true</status>
+        <sys_class_name>sn_cmp_bp_stage_resource_op_graph</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 19:57:06</sys_created_on>
+        <sys_id>a3bd5174dbf413000847f1351d961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_resource_op_graph_a3bd5174dbf413000847f1351d961938</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 19:57:06</sys_updated_on>
+    </sn_cmp_bp_stage_resource_op_graph>
+</record_update>

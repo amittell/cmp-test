@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_tag_name">
+    <sn_cmp_tag_name action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <label>VA_INST_NAME</label>
+        <name>u_va_inst_name</name>
+        <order_field/>
+        <order_table>sn_cmp_order</order_table>
+        <script/>
+        <sys_class_name>sn_cmp_tag_name</sys_class_name>
+        <sys_created_by>midserver</sys_created_by>
+        <sys_created_on>2018-03-09 18:27:52</sys_created_on>
+        <sys_id>1c59cdfcdb7413000847f1351d9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VA_INST_NAME</sys_name>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_tag_name_1c59cdfcdb7413000847f1351d9619eb</sys_update_name>
+        <sys_updated_by>midserver</sys_updated_by>
+        <sys_updated_on>2018-03-09 18:27:52</sys_updated_on>
+        <table/>
+        <tag_type>User-defined</tag_type>
+        <value_type>Variable</value_type>
+        <variable_name/>
+        <visible>false</visible>
+    </sn_cmp_tag_name>
+</record_update>

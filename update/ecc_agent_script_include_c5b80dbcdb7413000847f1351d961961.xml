@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_script_include">
+    <ecc_agent_script_include action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Script for CAPI - S3 Object Storage.GetService</description>
+        <name>aws-s3-1.0-GetService</name>
+        <script><![CDATA[function listBucket(){
+
+ms.log("Get Service operation called");
+var obj = {};
+obj.location = "us-east-1";
+return obj;
+}
+
+listBucket();
+]]></script>
+        <sys_class_name>ecc_agent_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 18:25:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c5b80dbcdb7413000847f1351d961961</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>aws-s3-1.0-GetService</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>ecc_agent_script_include_c5b80dbcdb7413000847f1351d961961</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 18:57:17</sys_updated_on>
+    </ecc_agent_script_include>
+</record_update>

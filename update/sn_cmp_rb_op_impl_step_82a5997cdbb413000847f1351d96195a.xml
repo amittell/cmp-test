@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_step">
+    <sn_cmp_rb_op_impl_step action="INSERT_OR_UPDATE">
+        <capi_interface display_value="Node Access Interface">7d22dfe30bb03200f353c9bf15673ae3</capi_interface>
+        <capi_method display_value="ExecuteSSHScript">c4e39f270bb03200f353c9bf15673aab</capi_method>
+        <capi_version>1.0</capi_version>
+        <condition/>
+        <depends_on/>
+        <enabled>true</enabled>
+        <interface/>
+        <interface_operation/>
+        <name>Node Access Interface.ExecuteSSHScript</name>
+        <operationimpl display_value="LinuxMountDisk">aa84157cdbb413000847f1351d961948</operationimpl>
+        <order>0</order>
+        <owner_type>1</owner_type>
+        <parent_step/>
+        <parentstep/>
+        <product_type/>
+        <provider>node-access</provider>
+        <provider_type/>
+        <sys_class_name>sn_cmp_rb_op_impl_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 19:21:47</sys_created_on>
+        <sys_id>82a5997cdbb413000847f1351d96195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Node Access Interface.ExecuteSSHScript</sys_name>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_step_82a5997cdbb413000847f1351d96195a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 19:21:47</sys_updated_on>
+    </sn_cmp_rb_op_impl_step>
+</record_update>

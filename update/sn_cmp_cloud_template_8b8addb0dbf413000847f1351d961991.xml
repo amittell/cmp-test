@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmp_cloud_template">
+    <sn_cmp_cloud_template action="INSERT_OR_UPDATE">
+        <body>ServiceNowCloudTemplate:&#13;
+  status: Draft&#13;
+  name: VM with Storage and Object Store&#13;
+  category: Compute&#13;
+  deploymentModel:&#13;
+  - resource: Logical Datacenter&#13;
+    resourceblock: ServiceNow::Resource::HostConstraints::Logical Datacenter&#13;
+    constraints: AWS Datacenter,vSphere Datacenter&#13;
+  - resource: Virtual Server&#13;
+    resourceblock: ServiceNow::Virtual Server&#13;
+    host: Logical Datacenter&#13;
+  - resource: Storage Volume&#13;
+    resourceblock: ServiceNow::Storage Volume&#13;
+    host: Logical Datacenter&#13;
+    binding:&#13;
+    - resource: Virtual Server&#13;
+      endpoint: Block Endpoint&#13;
+  - resource: Storage Container&#13;
+    resourceblock: ServiceNow::Storage Container&#13;
+  operations:&#13;
+  - operation: Provision&#13;
+    steps:&#13;
+    - step: Blueprint Container Resource::Provision::StackProvisionParameterSet&#13;
+    - step: Virtual Server::Provision::VirtualServerProvisionParameterSet&#13;
+    - step: Storage Volume::Provision::StorageVolumeProvisionParameterSet&#13;
+  - operation: ModifyLease&#13;
+    steps:&#13;
+    - step: Blueprint Container Resource::ModifyLease::StackModifyLeaseParameterSet&#13;
+  - operation: ModifySchedule&#13;
+    steps:&#13;
+    - step: Blueprint Container Resource::ModifySchedule::StackModifyScheduleParameterSet&#13;
+  parameterSets:&#13;
+  - parameterSet: StackProvisionParameterSet&#13;
+    resource: ServiceNow::Resource::VM with Storage and Object Store Blueprint Resource::Provision&#13;
+    parameters:&#13;
+    - parameter: ResourceGroupName&#13;
+      value: ${parameter.ResourceGroupName}&#13;
+      visibleInForm: true&#13;
+    - parameter: ScheduleTimeZone&#13;
+      datasource: ServiceNow::Pools::ScheduleTimeZonePool.All&#13;
+      value: ${parameter.ScheduleTimeZone}&#13;
+      visibleInForm: true&#13;
+    - parameter: SubscriptionId&#13;
+      value: ${parameter.SubscriptionId}&#13;
+      visibleInForm: true&#13;
+    - parameter: LeaseEndDate&#13;
+      value: ${parameter.LeaseEndDate}&#13;
+      visibleInForm: true&#13;
+    - parameter: CostCenter&#13;
+      datasource: ServiceNow::Pools::CostCenterPool.UserCostCenter&#13;
+      value: ${parameter.CostCenter}&#13;
+      visibleInForm: true&#13;
+    - parameter: BusinessService&#13;
+      datasource: ServiceNow::Pools::BusinessServicePool.All&#13;
+      value: ${parameter.BusinessService}&#13;
+      visibleInForm: true&#13;
+    - parameter: Application&#13;
+      datasource: ServiceNow::Pools::ApplicationPool.All&#13;
+      value: ${parameter.Application}&#13;
+      visibleInForm: true&#13;
+    - parameter: StackName&#13;
+      value: ${parameter.StackName}&#13;
+      visibleInForm: true&#13;
+    - parameter: Location&#13;
+      datasource: ServiceNow::Pools::CloudLocationPool.All&#13;
+      value: ${parameter.Location}&#13;
+      visibleInForm: true&#13;
+    - parameter: UserGroup&#13;
+      datasource: ServiceNow::Pools::UserGroupPool.GroupsUserBelongsTo&#13;
+      value: ${parameter.UserGroup}&#13;
+      visibleInForm: true&#13;
+    - parameter: CreateResourceGroup&#13;
+      value: ${parameter.CreateResourceGroup}&#13;
+      visibleInForm: true&#13;
+    - parameter: Logical_Datacenter&#13;
+      value: ${parameter.Logical_Datacenter}&#13;
+      visibleInForm: true&#13;
+    - parameter: CloudAccount&#13;
+      datasource: ServiceNow::Pools::CloudAccountPool.All&#13;
+      value: ${parameter.CloudAccount}&#13;
+      visibleInForm: true&#13;
+    - parameter: ResourceGroup&#13;
+      datasource: ServiceNow::Pools::ResourceGroupPool.getByLDC&#13;
+      value: ${parameter.ResourceGroup}&#13;
+      visibleInForm: true&#13;
+    - parameter: ScheduleProfile&#13;
+      datasource: ServiceNow::Pools::ScheduleProfilePool.All&#13;
+      value: ${parameter.ScheduleProfile}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: VirtualServerProvisionParameterSet&#13;
+    resource: ServiceNow::Resource::Virtual Server::Provision&#13;
+    parameters:&#13;
+    - parameter: OSProfile&#13;
+      datasource: ServiceNow::Pools::OSProfilePool.getByCAAndLDC&#13;
+      value: ${parameter.OSProfile}&#13;
+      visibleInForm: true&#13;
+    - parameter: StorageContainer&#13;
+      value: ${parameter.StorageContainer}&#13;
+      visibleInForm: true&#13;
+    - parameter: ComputeProfile&#13;
+      datasource: ServiceNow::Pools::ComputeProfilePool.getByCAAndLDC&#13;
+      value: ${parameter.ComputeProfile}&#13;
+      visibleInForm: true&#13;
+    - parameter: VmFolderName&#13;
+      datasource: ServiceNow::Pools::VmFolderPool.getByLDC&#13;
+      value: ${parameter.VmFolderName}&#13;
+      visibleInForm: true&#13;
+    - parameter: ManagedDisk&#13;
+      datasource: ServiceNow::CSVList::True,False&#13;
+      value: ${parameter.ManagedDisk}&#13;
+      visibleInForm: true&#13;
+    - parameter: NodeName&#13;
+      value: ${parameter.NodeName}&#13;
+      visibleInForm: true&#13;
+    - parameter: Network&#13;
+      datasource: ServiceNow::Pools::NetworkPool.getByLDC&#13;
+      value: ${parameter.Network}&#13;
+      visibleInForm: true&#13;
+    - parameter: SSHKeyName&#13;
+      datasource: ServiceNow::Pools::SSHKeyPool.UserKeys&#13;
+      value: ${parameter.SSHKeyName}&#13;
+      visibleInForm: true&#13;
+    - parameter: StorageAccount&#13;
+      datasource: ServiceNow::Pools::StorageAccountPool.getByLDC&#13;
+      value: ${parameter.StorageAccount}&#13;
+      visibleInForm: true&#13;
+    - parameter: SubnetId&#13;
+      datasource: ServiceNow::Pools::SubnetPool.getByNetwork&#13;
+      value: ${parameter.SubnetId}&#13;
+      visibleInForm: true&#13;
+    - parameter: ExternalNetwork&#13;
+      datasource: ServiceNow::Pools::NetworkPool.getExternalNetworksByLDC&#13;
+      value: ${parameter.ExternalNetwork}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: StorageVolumeProvisionParameterSet&#13;
+    resource: ServiceNow::Resource::Storage Volume::Provision&#13;
+    parameters:&#13;
+    - parameter: SizeTotalGB&#13;
+      datasource: ${parameter.SizeTotalGB}&#13;
+      value: ''&#13;
+      visibleInForm: true&#13;
+    - parameter: VolumeName&#13;
+      datasource: ${parameter.VolumeName}&#13;
+      value: ''&#13;
+      visibleInForm: true&#13;
+    - parameter: Datastore&#13;
+      datasource: ServiceNow::Pools::DatastorePool.getByLDC&#13;
+      value: ${parameter.Datastore}&#13;
+      visibleInForm: true&#13;
+    - parameter: StorageType&#13;
+      datasource: ServiceNow::CSVList::Block&#13;
+      value: ''&#13;
+      visibleInForm: true&#13;
+    - parameter: AvailabilityZone&#13;
+      datasource: ServiceNow::Pools::AvailabilityZonePool.getByLDC&#13;
+      value: ${parameter.AvailabilityZone}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: StackModifyLeaseParameterSet&#13;
+    resource: ServiceNow::Resource::VM with Storage and Object Store Blueprint Resource::ModifyLease&#13;
+    parameters:&#13;
+    - parameter: LeaseEndDate&#13;
+      value: ${parameter.LeaseEndDate}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: StackModifyScheduleParameterSet&#13;
+    resource: ServiceNow::Resource::VM with Storage and Object Store Blueprint Resource::ModifySchedule&#13;
+    parameters:&#13;
+    - parameter: ScheduleProfile&#13;
+      datasource: ServiceNow::Pools::ScheduleProfilePool.All&#13;
+      value: ${parameter.ScheduleProfile}&#13;
+      visibleInForm: true&#13;
+    - parameter: ScheduleTimeZone&#13;
+      datasource: ServiceNow::Pools::ScheduleTimeZonePool.All&#13;
+      value: ${parameter.ScheduleTimeZone}&#13;
+      visibleInForm: true&#13;
+</body>
+        <name>Test Blueprint</name>
+        <short_description/>
+        <sys_class_name>sn_cmp_cloud_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 19:43:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8b8addb0dbf413000847f1351d961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Blueprint</sys_name>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_cloud_template_8b8addb0dbf413000847f1351d961991</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 19:43:47</sys_updated_on>
+        <template_url/>
+        <type display_value="ServiceNow Blueprint">ab1f81e49f00320048111f80a57fcf30</type>
+        <use_template_body>true</use_template_body>
+    </sn_cmp_cloud_template>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_resource">
+    <sn_cmp_bp_stage_resource action="INSERT_OR_UPDATE">
+        <alias_name>Storage Container</alias_name>
+        <bp_stage_model display_value="">7d68d130dbf413000847f1351d9619e1</bp_stage_model>
+        <constraint/>
+        <host_ci/>
+        <resource_block display_value="Storage Container">fd2c4db0dbb413000847f1351d9619ea</resource_block>
+        <sys_class_name>sn_cmp_bp_stage_resource</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 19:35:39</sys_created_on>
+        <sys_id>ddd8d570dbf413000847f1351d961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Storage Container</sys_name>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_resource_ddd8d570dbf413000847f1351d961914</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 19:35:39</sys_updated_on>
+        <type>1</type>
+    </sn_cmp_bp_stage_resource>
+</record_update>

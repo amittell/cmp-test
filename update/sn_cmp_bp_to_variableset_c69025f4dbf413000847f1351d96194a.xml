@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_to_variableset">
+    <sn_cmp_bp_to_variableset action="INSERT_OR_UPDATE">
+        <blue_print display_value="VM with Storage and Object Store">73581130dbf413000847f1351d96197d</blue_print>
+        <sys_class_name>sn_cmp_bp_to_variableset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 20:09:33</sys_created_on>
+        <sys_id>c69025f4dbf413000847f1351d96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_bp_to_variableset_c69025f4dbf413000847f1351d96194a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 20:09:33</sys_updated_on>
+        <variable_set display_value="Lifecycle Operation Parameters">b19025f4dbf413000847f1351d961907</variable_set>
+    </sn_cmp_bp_to_variableset>
+</record_update>

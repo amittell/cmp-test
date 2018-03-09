@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_capi_interface_op_parameter">
+    <sn_capi_interface_op_parameter action="INSERT_OR_UPDATE">
+        <capi_interface_operation display_value="CreateBucket">2c380d7cdb7413000847f1351d961961</capi_interface_operation>
+        <parameter_name>Name</parameter_name>
+        <sys_class_name>sn_capi_interface_op_parameter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 18:23:28</sys_created_on>
+        <sys_id>8748c97cdb7413000847f1351d96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Name</sys_name>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_capi_interface_op_parameter_8748c97cdb7413000847f1351d96193f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 18:23:28</sys_updated_on>
+    </sn_capi_interface_op_parameter>
+</record_update>

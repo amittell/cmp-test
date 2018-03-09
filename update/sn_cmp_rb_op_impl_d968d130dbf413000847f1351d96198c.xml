@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl">
+    <sn_cmp_rb_op_impl action="INSERT_OR_UPDATE">
+        <interface display_value="VM with Storage and Object Store Resource Interface">c4689130dbf413000847f1351d961975</interface>
+        <operation display_value="ModifySchedule">9d68d130dbf413000847f1351d961989</operation>
+        <operation_output_attributes/>
+        <resource display_value="VM with Storage and Object Store Blueprint Resource">08689130dbf413000847f1351d961977</resource>
+        <sys_class_name>sn_cmp_rb_op_impl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-09 19:33:45</sys_created_on>
+        <sys_id>d968d130dbf413000847f1351d96198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9d68d130dbf413000847f1351d961989</sys_name>
+        <sys_package display_value="cmp_test" source="x_snc_cmp_test">cd448db4db7413000847f1351d96195a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="cmp_test">cd448db4db7413000847f1351d96195a</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_d968d130dbf413000847f1351d96198c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-09 19:33:45</sys_updated_on>
+    </sn_cmp_rb_op_impl>
+</record_update>
